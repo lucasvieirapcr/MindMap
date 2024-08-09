@@ -1,0 +1,58 @@
+/* Estilos para a estrutura básica */
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove o sublinhado dos links */
+.sidebar a {
+  text-decoration: none;
+  color: #0e0d0d; /* Adapte a cor conforme necessário */
+  font-size: 20px;
+  margin: 15px;
+}
+
+.sidebar li {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 7px;
+  border: 1px solid #d9d9d9;
+  padding: 10px;
+  background-color: #d9d9d9;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.sidebar img {
+  width: 20px;
+}
+
+.sidebar {
+  left: 0;
+  width: 350px;
+  padding: 20px;
+  padding-right: 60px;
+  flex-shrink: 0; /* Garante que o sidebar não encolha */
+  border-right: 1px solid #d9d9d9;
+}
+
+.content {
+  flex: 1;
+  padding-left: 20px;
+  border-radius: 15px;
+  margin-left: 70px; /* Distância entre sidebar e content */
+  margin-right: 20px; /* Distância da borda direita */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

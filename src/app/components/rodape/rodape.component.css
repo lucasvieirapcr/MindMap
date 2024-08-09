@@ -1,0 +1,42 @@
+footer {
+    position: relative; /* Permite o posicionamento da imagem de forma absoluta dentro do footer */
+    padding: 40px; /* Espaçamento interno */
+    background-color: #111111; /* Cor de fundo do rodapé */
+    text-align: space-around; /* Centraliza o texto */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites do rodapé */
+}
+
+.TextoCopyright {
+    font-family: 'Inter', sans-serif; /* Fonte Inter */
+    font-size: 14px; /* Tamanho do texto */
+    color: #ffffff; /* Cor do texto */
+
+}
+
+.LogoRodape {
+    position: absolute; /* Posiciona a imagem de forma absoluta */
+    top: 50%; /* Posiciona a imagem verticalmente no centro */
+    left: 50%; /* Posiciona a imagem horizontalmente no centro */
+    transform: translate(-50%, -50%); /* Ajusta a posição da imagem para centralizá-la */
+    width: 300px; /* Largura da imagem */
+
+}
+
+
+@media (max-width: 576px) {
+  .cabecalho .logo {
+    padding: 2rem;
+  }
+
+  .cabecalho p {
+    font-size: 1.5rem
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+}
